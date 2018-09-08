@@ -20,7 +20,7 @@ class CommentForm extends Component{
 
     handleFormSubmit(event){
         console.log(event.target.name.value.length)
-        if(event.target.name.value.length === 0 || event.target.title.value.length === 0 || event.target.comment.value.length === 0){
+        if(event.target.name.value === "" || event.target.title.value === "" || event.target.comment.value === ""){
             event.preventDefault();
             this.setState({ formValid : false });
         }
