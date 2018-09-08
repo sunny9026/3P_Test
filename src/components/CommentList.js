@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import _ from 'lodash';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 
 //please note: I used PropsType checking as its good to check the datatype that we expect before we use the props 
 
@@ -52,10 +52,10 @@ const mapStateToProps = state => {
   return { allComments: state.comments };
 };
 
-CommentList.PropTypes = { //proptypes checking here
-  name : PropTypes.string,
-  title : PropTypes.string,
-  comment : PropTypes.string,
+CommentList.propTypes = { //proptypes checking here
+  name : propTypes.string,
+  title : propTypes.string,
+  comment : propTypes.string,
 }
 
 export default connect(mapStateToProps)(CommentList);
