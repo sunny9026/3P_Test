@@ -1,4 +1,4 @@
-import React, { Component, ReactFragment } from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import _ from 'lodash';
 import PropTypes from 'prop-types';
@@ -36,14 +36,14 @@ class CommentList extends Component {
 
   render() {
     return (
-      <ReactFragment>
+      <React.Fragment>
         <div className="row mb-4">
           <div className="col">
             <button type="button" className="btn btn-primary" onClick={() => { this.props.setFlag(true) }}>Add Comment</button>
           </div>
         </div>
         {this.renderComments()}
-      </ReactFragment>
+      </React.Fragment>
     );
   } //note: React Fragment learned and used here
 }
