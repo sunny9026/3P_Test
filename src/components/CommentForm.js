@@ -10,9 +10,9 @@ class CommentForm extends Component{
     constructor(props){
         super(props);
         this.state = {
-            namefield : null,  //please note: always a good practice to bind all the inputs to state only so to make them controlled fields
-            titlefield : null,
-            commentfield : null,
+            namefield : "",  //please note: always a good practice to bind all the inputs to state only so to make them controlled fields
+            titlefield : "",
+            commentfield : "",
             formValid : true
         }
         this.handleFormSubmit = this.handleFormSubmit.bind(this);
