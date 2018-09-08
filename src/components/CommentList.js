@@ -17,13 +17,13 @@ class CommentList extends Component {
 
     return _.map(this.props.allComments, comm =>{ // note: we have to use lodashes map because when we dealing with objects ( like in this case) they do not have their own map like arrays do
       return (
-        <div class="row mb-4" key = { comm.name }>
-          <div class="col">
-            <div class="card">
-              <h6 class="card-header">{comm.name}</h6>
-              <div class="card-body">
-                <h5 class="card-title">{comm.title}</h5>
-                <p class="card-text">{comm.comment}</p>
+        <div className="row mb-4" key = { comm.name }>
+          <div className="col">
+            <div className="card">
+              <h6 className="card-header">{comm.name}</h6>
+              <div className="card-body">
+                <h5 className="card-title">{comm.title}</h5>
+                <p className="card-text">{comm.comment}</p>
               </div>
             </div>
           </div>
